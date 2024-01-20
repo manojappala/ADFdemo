@@ -1,0 +1,14 @@
+{
+	"name": "DemoADF-jan-2024",
+	"properties": {
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "false"
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ba82312e-f359-43e9-bb82-2206422c6743",
+		"tenantId": "3061db22-5555-4afd-8c9f-12d8a05a41b2"
+	}
+}

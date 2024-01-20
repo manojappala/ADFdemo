@@ -1,0 +1,28 @@
+{
+	"name": "executeexample",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Pipeline1",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [
+					{
+						"name": "execute pipeline",
+						"value": "example"
+					}
+				],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "copyexample",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-01-14T02:28:05Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

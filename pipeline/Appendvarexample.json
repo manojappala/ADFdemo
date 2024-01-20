@@ -1,0 +1,38 @@
+{
+	"name": "Appendvarexample",
+	"properties": {
+		"activities": [
+			{
+				"name": "Append list of files Varible",
+				"type": "AppendVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "ListofFiles",
+					"value": {
+						"value": "@pipeline().parameters.FileName",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"FileName": {
+				"type": "string",
+				"defaultValue": "SalesIndia.txt"
+			}
+		},
+		"variables": {
+			"ListofFiles": {
+				"type": "Array",
+				"defaultValue": [
+					"SalesUS",
+					"SalesUK"
+				]
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2024-01-14T02:16:57Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
